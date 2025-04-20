@@ -1,0 +1,7 @@
+D:\2nd sem\OOP\PD9\T2\bin\Debug\T2.exe.config
+D:\2nd sem\OOP\PD9\T2\bin\Debug\T2.exe
+D:\2nd sem\OOP\PD9\T2\bin\Debug\T2.pdb
+D:\2nd sem\OOP\PD9\T2\obj\Debug\T2.csproj.AssemblyReference.cache
+D:\2nd sem\OOP\PD9\T2\obj\Debug\T2.csproj.CoreCompileInputs.cache
+D:\2nd sem\OOP\PD9\T2\obj\Debug\T2.exe
+D:\2nd sem\OOP\PD9\T2\obj\Debug\T2.pdb
