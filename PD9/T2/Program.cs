@@ -10,48 +10,54 @@ namespace T2
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("****************Grade Calculation System****************");
+            Console.WriteLine("Welcome to the Course Grading System!");
             Console.WriteLine(" ");
 
-            Console.Write("Enter Project Name:");
-            string project = Console.ReadLine();
+            Console.WriteLine("Please enter the Project name and courses details.");
+            Console.Write("Project Name:");
+            string projectName = Console.ReadLine();
 
-            Console.Write("Enter name of First course:");
-            string course1 = Console.ReadLine();
+            Console.Write("Course 1 Name:");
+            string course1Name = Console.ReadLine();
 
-            Console.Write("Enter marks:");
-            int marks1 = int.Parse(Console.ReadLine());
+            Console.Write("Course 1 Marks:");
+            int course1Marks = Convert.ToInt32(Console.ReadLine());
 
-            AbsoluteGradedCourse a1 = new AbsoluteGradedCourse(course1, marks1);
+            Console.Write("Course 2 Name:");
+            string course2Name = Console.ReadLine();
 
-            Console.Write("Enter name of Second course:");
-            string course2 = Console.ReadLine();
+            Console.Write("Course 2 Marks:");
+            int course2Marks = Convert.ToInt32(Console.ReadLine());
 
-            Console.Write("Enter marks:");
-            int marks2 = int.Parse(Console.ReadLine());
+            AbsoluteGradedCourse a1 = new AbsoluteGradedCourse(course1Name, course1Marks);
+            AbsoluteGradedCourse a2 = new AbsoluteGradedCourse(course2Name, course2Marks);
 
-            AbsoluteGradedCourse a2 = new AbsoluteGradedCourse(course2, marks2);
+            Console.Write("Course 3 Name:");
+            string course3Name = Console.ReadLine();
 
-            Console.Write("Enter name of Third course:");
-            string course3 = Console.ReadLine();
+            Console.Write("Course 3 Marks:");
+            int course3Marks = Convert.ToInt32(Console.ReadLine());
 
-            Console.Write("Enter marks:");
-            int marks3 = int.Parse(Console.ReadLine());
+            Console.Write("Course 4 Name:");
+            string course4Name = Console.ReadLine();
 
-            GradedCourse g1 = new GradedCourse(course3, marks3);
+            Console.Write("Course 4 Marks:");
+            int course4Marks = Convert.ToInt32(Console.ReadLine());
 
-            Console.Write("Enter name of Fourth course:");
-            string course4 = Console.ReadLine();
+            GradedCourse g1 = new GradedCourse(course3Name, course3Marks);
+            GradedCourse g2 = new GradedCourse(course4Name, course4Marks);
 
-            Console.Write("Enter marks:");
-            int marks4 = int.Parse(Console.ReadLine());
+            List<Course> courses1 = new List<Course>();
+            courses1.Add(a1);
+            courses1.Add(a2);
+            courses1.Add(g1);
+            courses1.Add(g2);
 
-            GradedCourse g2 = new GradedCourse(course4, marks4);
-            List<Course> courseList = new List<Course> { a1, a2, g1, g2 };
-
-            Project project1 = new Project(project, a1, a2, g1, g2);
+            Project project1 = new Project(projectName, courses1);
             project1.Passed();
 
+            Console.WriteLine("Press any key to exit.");
+            Console.ReadKey();
 
         }
     }

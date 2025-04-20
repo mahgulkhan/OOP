@@ -19,7 +19,7 @@ namespace T2
         {
             this.grade = grade;
         }
-        public string GetGrade()
+        public override string GetGrade()
         {
             if (marks >= 90)
             {

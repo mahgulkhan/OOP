@@ -19,11 +19,8 @@ namespace T2
         {
             this.grade = grade;
         }
-        private string GetName()
-        {
-            return courseName;  
-        }
-        public string GetGrade()
+        
+        public override string GetGrade()
         {
             if (marks >= 90)
             {

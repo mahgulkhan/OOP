@@ -18,13 +18,10 @@ namespace T2
             this.marks = marks;
         }
 
-        protected Course(string courseName, int marks, string grade)
+        public virtual string GetGrade()
         {
-            this.courseName = courseName;
-            this.marks = marks;
-            this.grade = grade;
+            return grade;
         }
-
         public virtual string Passed()
         {
             if (marks < 40)
